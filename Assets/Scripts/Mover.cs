@@ -9,9 +9,10 @@ public class Mover : MonoBehaviour
     {
         rBody = GetComponent<Rigidbody>();
 
-        var x = Random.Range(0, MaxSpeed);
-        var z = Random.Range(0, MaxSpeed);
+        var x = Random.Range(-MaxSpeed, MaxSpeed);
+        var z = Random.Range(-MaxSpeed, MaxSpeed);
 
         rBody.velocity = new Vector3(x, 0, z);
     }
+
 }
