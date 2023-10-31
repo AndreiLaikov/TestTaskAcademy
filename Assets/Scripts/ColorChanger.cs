@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent (typeof (MeshRenderer))]
-public class ColorChanger : BaseObj
+public class olorChanger : BaseObj
 {
     private Material material;
 

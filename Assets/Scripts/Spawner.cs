@@ -14,6 +14,12 @@ public class Spawner : MonoBehaviour
         }
     }
 
+    private void Instant()
+    {
+        int index = Random.Range(0, prefabs.Length);
+        Instantiate(prefabs[index], transform.position, Quaternion.identity);
+    }
+
     [ContextMenu("Create")]
     void Create()
     {
@@ -21,11 +27,5 @@ public class Spawner : MonoBehaviour
         {
             Instant();
         }
-    }
-
-    private void Instant()
-    {
-        int index = Random.Range(0, prefabs.Length);
-        Instantiate(prefabs[index], transform.position, Quaternion.identity);
     }
 }
